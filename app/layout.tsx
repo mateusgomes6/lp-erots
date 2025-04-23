@@ -1,6 +1,6 @@
 import type React from "react"
 import "@/app/globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
+import { ThemeProvider } from "@/app/components/ThemeProvider"
 
 export const metadata = {
   title: "Erots - Catálogo de produtos online para pequenas lojas",
