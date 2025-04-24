@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { HomeHero } from "./s-hero";
 import { HomePartners } from "./s-partners";
 import { HomeFeatures } from "./s-features";
+import { HomePrices } from "./s-prices";
 
 export default function Home() {
   return (
@@ -452,180 +453,13 @@ export default function Home() {
                   </li>
                 </ul>
                 <div>
-                  <Button className="bg-black hover:bg-gray-800">
-                    Ver Demonstração Mobile
-                  </Button>
+                  <Button variant="secondary">Ver Demonstração Mobile</Button>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
-        {/* Pricing Section */}
-        <section
-          id="pricing"
-          className="w-full py-12 md:py-24 lg:py-32 bg-gray-50 max-w-[1440px] mx-auto"
-        >
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-gray-200 px-3 py-1 text-sm">
-                  Preços
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                  Planos acessíveis para lojas de todos os tamanhos
-                </h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Escolha o plano que melhor atende às necessidades da sua loja.
-                  Todos os planos incluem suporte técnico.
-                </p>
-              </div>
-            </div>
-
-            <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
-              {/* Starter Plan */}
-              <div className="flex flex-col rounded-lg border bg-card text-card-foreground shadow-sm">
-                <div className="p-6 pt-8">
-                  <h3 className="text-lg font-bold">Iniciante</h3>
-                  <div className="mt-4 flex items-baseline text-4xl font-bold">
-                    R$49
-                    <span className="ml-1 text-sm font-normal text-muted-foreground">
-                      /mês
-                    </span>
-                  </div>
-                  <p className="mt-2 text-sm text-muted-foreground">
-                    Perfeito para pequenas lojas começando online.
-                  </p>
-                </div>
-                <div className="flex flex-1 flex-col p-6 pt-0">
-                  <ul className="space-y-2">
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-black" />
-                      <span>Até 50 produtos</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-black" />
-                      <span>1 usuário administrador</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-black" />
-                      <span>Domínio personalizado</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-black" />
-                      <span>Suporte por email</span>
-                    </li>
-                  </ul>
-                  <div className="mt-6">
-                    <Button className="w-full bg-black hover:bg-gray-800">
-                      Começar Agora
-                    </Button>
-                  </div>
-                </div>
-              </div>
-
-              {/* Pro Plan */}
-              <div className="flex flex-col rounded-lg border bg-black text-white shadow-lg relative">
-                <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-0 rounded-full bg-gray-800 px-3 py-1 text-xs font-bold">
-                  Popular
-                </div>
-                <div className="p-6 pt-8">
-                  <h3 className="text-lg font-bold">Profissional</h3>
-                  <div className="mt-4 flex items-baseline text-4xl font-bold">
-                    R$99
-                    <span className="ml-1 text-sm font-normal text-gray-300">
-                      /mês
-                    </span>
-                  </div>
-                  <p className="mt-2 text-sm text-gray-300">
-                    Ideal para lojas em crescimento.
-                  </p>
-                </div>
-                <div className="flex flex-1 flex-col p-6 pt-0">
-                  <ul className="space-y-2">
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-gray-400" />
-                      <span>Até 500 produtos</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-gray-400" />
-                      <span>3 usuários administradores</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-gray-400" />
-                      <span>Domínio personalizado</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-gray-400" />
-                      <span>Suporte prioritário</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-gray-400" />
-                      <span>Relatórios avançados</span>
-                    </li>
-                  </ul>
-                  <div className="mt-6">
-                    <Button className="w-full bg-white text-black hover:bg-gray-200">
-                      Começar Agora
-                    </Button>
-                  </div>
-                </div>
-              </div>
-
-              {/* Enterprise Plan */}
-              <div className="flex flex-col rounded-lg border bg-card text-card-foreground shadow-sm">
-                <div className="p-6 pt-8">
-                  <h3 className="text-lg font-bold">Empresarial</h3>
-                  <div className="mt-4 flex items-baseline text-4xl font-bold">
-                    R$199
-                    <span className="ml-1 text-sm font-normal text-muted-foreground">
-                      /mês
-                    </span>
-                  </div>
-                  <p className="mt-2 text-sm text-muted-foreground">
-                    Para lojas estabelecidas com grande volume de vendas.
-                  </p>
-                </div>
-                <div className="flex flex-1 flex-col p-6 pt-0">
-                  <ul className="space-y-2">
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-black" />
-                      <span>Produtos ilimitados</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-black" />
-                      <span>10 usuários administradores</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-black" />
-                      <span>Domínio personalizado</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-black" />
-                      <span>Suporte 24/7</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-black" />
-                      <span>Integrações avançadas</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-black" />
-                      <span>API personalizada</span>
-                    </li>
-                  </ul>
-                  <div className="mt-6">
-                    <Button
-                      variant="outline"
-                      className="w-full border-black text-black hover:bg-gray-100"
-                    >
-                      Começar Agora
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <HomePrices />
 
         {/* Testimonials Section */}
         <section

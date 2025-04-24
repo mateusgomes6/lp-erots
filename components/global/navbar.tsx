@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 
 export const Navbar = () => {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white backdrop-blur supports-[backdrop-filter]:bg-white/60 max-w-[1440px] mx-auto">
-      <div className="container flex h-16 items-center justify-between">
+    <header className="sticky top-0 z-50 w-full border-b bg-white">
+      <div className="container flex h-20 items-center justify-between max-w-[1440px] mx-auto">
         <div className="flex items-center gap-2">
           <Image src="/logo.png" alt="Erots Logo" width={120} height={40} />
         </div>
@@ -42,7 +42,7 @@ export const Navbar = () => {
           >
             Login
           </Link>
-          <Button className="bg-black hover:bg-gray-800">Começar Grátis</Button>
+          <Button variant="secondary">Começar Grátis</Button>
         </div>
       </div>
     </header>
